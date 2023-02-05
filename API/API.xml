@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.OperationsController.Get">
+            <summary>
+            List of operations
+            </summary>
+            <returns>All operations</returns>
+        </member>
+        <member name="M:API.Controllers.OperationsController.Post(Domain.Models.Dtos.OperationDTO)">
+             <summary>
+             Calculate operation
+             </summary>
+            <remarks>
+             Sample request:
+            
+                 POST api/v1/operations/
+            
+             </remarks>
+             <param name="operation"></param>
+             <returns>The operation</returns>
+             <response code="400">If validation criteria are not met</response>
+             <response code="500">In case of errors occurring on the data layer or anywhere on the server's side</response>
+        </member>
+        <member name="T:API.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:API.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
